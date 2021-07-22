@@ -17,9 +17,9 @@ class SpellTheNumber {
         }
         return ourSpeech
     }
-    static spellAndRepeat(times) {
-        let result = ["1"]; // starting with 1
-        let lastNumber = "1";
+    static spellAndRepeat(times, startingWith = "1") {
+        let result = [startingWith]; // starting with 1
+        let lastNumber = startingWith;
         // also it's possible to move lastNumber variable outside this function to SpellTheNumber
         // class and make it not static (and initialize it instead of (SpellTheNumber.spellAndRepeat(...))
         for (let i = 0; i < times; i++) {
