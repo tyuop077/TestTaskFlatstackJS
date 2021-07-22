@@ -33,8 +33,14 @@ class SpellTheNumber {
     }
 }
 
-const result = SpellTheNumber.spellAndRepeat(15)
+if (require.main === module) {
+    // we won't run this script if index.js is running as module
+    // (ex. when we're unit testing it from test.js)
+    const result = SpellTheNumber.spellAndRepeat(15)
 
-for (const item of result) {
-    console.log(item)
+    for (const item of result) {
+        console.log(item)
+    }
 }
+
+module.exports = SpellTheNumber

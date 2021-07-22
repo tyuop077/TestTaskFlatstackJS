@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "description": "Qualifying task",
   "main": "index.js",
-  "author": "tyuop077"
+  "author": "tyuop077",
+  "scripts":{
+    "test" : "mocha test.js"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  }
 }
